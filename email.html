@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="Utf-8">
+    <link rel="stylesheet" href="DestopMobileStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="javascript.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+</head>
+
+<body>
+
+
+    <section>
+        <header class="headerBox">
+
+            <div class="header">
+                <h2>uma seleção de produtos</h2>
+                <h1>especial para você</h1>
+                <p>
+                    Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!
+                </p>
+
+            </div>
+
+
+        </header>
+    </section>
+
+
+    <main class="content">
+        <h1>Olá, Fulano</h1>
+        <p>
+            Fizemos uma lista especial de produtos apenas para você. Isso mesmo: nesta lista temos só produtos<br /> que você pode gostar. Seu amigo Ciclano lhe recomendou essa lista especial. Olha só:
+        </p>
+    </main>
+
+    <!-- produtos -->
+    <section class="cards">
+        <article>
+            <ul data-js="products" class="products" id="products"></ul>
+        </article>
+
+    </section>
+    <section>
+
+        <header>
+
+            <button class="next-page-products" onclick="showingMore()">
+                Tem muito mais aqui. Vem ver!  </button>
+
+        </header>
+
+        <article>
+            <!-- more produtos -->
+            <div class="cards">
+                <ul data-js="next-page-products" class="products" id="products"></ul>
+            </div>
+
+
+        </article>
+
+    </section>
+    <footer class="footerBox">
+        <div>
+            Testando suas habilidades em HTML, CSS e JS.<br> Linx Impulse<br> 2019
+        </div>
+    </footer>
+
+
+
+
+</body>

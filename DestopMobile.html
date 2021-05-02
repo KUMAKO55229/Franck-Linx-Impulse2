@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <!-- <tite class="titulo"> Pagina Mobile & Desktop</tite> -->
+    <meta charset="Utf-8">
+    <link rel="stylesheet" href="DestopMobileStyle.css">
+    <script type="text/javascript" src="javascript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+</head>
+
+<body>
+    <section class="">
+        <header class="headerBox">
+
+            <div class="header">
+                <h2>uma seleção de produtos</h2>
+                <h1>especial para você</h1>
+                <p>
+                    Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!
+                </p>
+
+            </div>
+
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <button class="buttoN">
+              Conheça a Linx<!-- </a
+                > -->
+              </button>
+                    </li>
+                    <li><button class="buttoN">Ajude o algorítimo</button></li>
+                    <li><button class="buttoN">Seus produtos</button></li>
+                    <li>
+                        <button class="buttoN"> <!-- <a  href="mailto:franckkumako@yahoo.fr?subject=Compartihando meu site com voce amigo!"  >--> Compartilhe<!-- </a> --></button>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+        <article class="">
+
+            <div class="container">
+
+
+                <div class="row">
+
+                    <div class="texTColumn">
+                        <h3>Ajude o algorítimo a ser mais certeiro </h3>
+                        <div class="">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra, sem feugiat tristique ornare, erat tortor iaculis sem, vitae efficitur ligula nisi vel dui. Ut mollis metus ligula, at ornare magna finibus nec. Morbi consequat et tellus ac faucibus.
+                                Nunc eu suscipit urna. Praesent a bibendum arcu, quis venenatis metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas in accumsan nisi. Pellentesque at egestas arcu.
+                                Duis rhoncus nisi sit amet porta aliquam. Suspendisse malesuada, sem a efficitur mollis, dolor est lobortis nisl, sit amet lacinia nisl nunc ut tellus.
+                            </p>
+                            <p>
+                                Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis lorem ultricies, pulvinar purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra. Quisque ut neque mattis, consequat velit ut, ultrices orci. Nulla
+                                varius elementum erat vel pharetra. Aenean sit amet nisi diam. Morbi viverra, magna ac luctus commodo, odio ante suscipit libero, at mattis augue est vel metus.
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="formeTop">
+                        <form class="sendingData" action="" id="sendingData" onsubmit="return validatingSendingData()">
+                            <span class="formField">
+                                <label for="username">Seu nome:</label>
+                                <input type="text" name="username" id="userName">
+                            </span>
+                            <span class="formField">
+                                <label for="userEmail">E-mail:</label>
+                                <input type="email" name="userEmail" id="userEmail">
+                            </span>
+                            <span class="formField">
+                                <label for="userCPF">CPF:</label>
+                                <input type="text" name="userCPF" id="userCPF" pattern="\d{3}.\d{3}.\d{3}-\d{2}">
+                            </span>
+                            <span class="radioButton">
+                                <input type="radio" name="gender" id="male" value="male">
+                                <label for="male">Masculino</label>
+                                <input type="radio" name="gender" id="female" value="female">
+                                <label for="female">Feminino</label>
+                            </span>
+                            <span class="formField">      
+                            <button class="buttonSendinData" type="submit">Enviar</button> 
+                            </span>
+
+                        </form>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </article>
+        <h3 class="ligne" id="">Sua seleção especial</h3>
+
+        <article>
+
+        </article>
+    </section>
+
+    <!-- produtos -->
+    <section class="cards">
+        <article>
+            <ul data-js="products" class="products" id="products"></ul>
+        </article>
+
+    </section>
+
+    <section>
+
+        <header>
+
+            <button class="next-page-products" onclick="showingMore()">
+            Ainda mais produtos aqui  </button>
+
+        </header>
+
+        <article>
+            <!-- more produtos -->
+            <div class="cards">
+                <ul data-js="next-page-products" class="products" id="products"></ul>
+            </div>
+
+
+        </article>
+
+    </section>
+    <h3 class="ligne" id="">Compartilhe a novidade</h3>
+
+    <div id="friendFields">
+
+        <div class="fill"> Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</div>
+        <form action="" id="shareNews" onsubmit="return validatingNewsletter()">
+
+            <div class="row">
+
+                <span class="formField leftName">
+                    <label for="friendName">Nome do seu amigo:</label>
+                    <input type="text" name="friendName" id="friendName">
+                   
+                </span>
+                <span class="formField leftEmail">
+                    <label for="friendEmail">E-mail:</label>
+                    <input type="email" name="friendEmail" id="friendEmail">
+                </span>
+            </div>
+
+        </form>
+        <button type="submit" form="ButtoNshareNews" class="ButtoNshareNews">Enviar agora</button>
+    </div>
+
+
+    <footer class="footerBox">
+        <div>
+            Testando suas habilidades em HTML, CSS e JS.<br> Linx Impulse<br> 2019
+        </div>
+    </footer>
+
+
+
+</body>
